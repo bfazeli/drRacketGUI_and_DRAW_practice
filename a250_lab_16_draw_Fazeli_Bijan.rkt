@@ -33,6 +33,7 @@
 (draw-solid-disk r_eye 10 'black)
 (draw-solid-disk r_eye 3 'red)
 
+;; Clouds
 ;; Cloud 1
 (define l_cloud (make-posn 140 110))
 (define m_cloud (make-posn 160 70))
@@ -40,7 +41,6 @@
 (draw-solid-disk l_cloud 30 'white)
 (draw-solid-disk m_cloud 30 'white)
 (draw-solid-disk r_cloud 30 'white)
-
 ;; Cloud 2
 (define l_cloud_2 (make-posn 300 40))
 (define m_cloud_2 (make-posn 340 70))
@@ -48,3 +48,10 @@
 (draw-solid-disk l_cloud_2 40 'white)
 (draw-solid-disk m_cloud_2 30 'white)
 (draw-solid-disk r_cloud_2 30 'white)
+;; Cloud 3
+(define l_cloud_3 (make-posn 490 160))
+(define m_cloud_3 (make-posn 510 120))
+(define r_cloud_3 (make-posn 540 150))
+(draw-solid-disk l_cloud_3 30 'white)
+(draw-solid-disk m_cloud_3 30 'white)
+(draw-solid-disk r_cloud_3 30 'white)
