@@ -1,3 +1,35 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
 #reader(lib "htdp-beginner-reader.ss" "lang")((modname a250_lab_16_draw_Fazeli_Bijan) (read-case-sensitive #t) (teachpacks ((lib "draw.rkt" "teachpack" "htdp"))) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ((lib "draw.rkt" "teachpack" "htdp")) #f)))
+;; Fazeli, Bijan
+;; CS A250
+;; December 3, 2016
+
+;; Lab 16 Racket Graphics
+
+;; Create the Screen to display the Car graphics on
+(start 600 600)
+
+;; Draw the BackDrop night Sky
+(draw-solid-rect (make-posn 0 0) 600 500 'gray)
+
+;; MOON
+;; Draw face
+(define face (make-posn 50 50))
+(draw-solid-disk face 50 'yellow)
+;; Draw mouth
+(define mouth (make-posn 50 50))
+(draw-solid-disk mouth 40 'black)
+;; Cover the top half of the mouth with the color of the face
+(define top_half (make-posn 10 20))
+(draw-solid-rect top_half 80 50 'yellow)
+(draw-solid-rect (make-posn 18 10) 64 15 'yellow)
+;; Draw left eye
+(define l_eye (make-posn 30 35))
+(draw-solid-disk l_eye 10 'black)
+(draw-solid-disk l_eye 3 'red)
+;; Draw right eye
+(define r_eye (make-posn 70 35))
+(draw-solid-disk r_eye 10 'black)
+(draw-solid-disk r_eye 3 'red)
+
