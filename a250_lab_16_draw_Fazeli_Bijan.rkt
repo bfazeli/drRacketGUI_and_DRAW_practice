@@ -11,7 +11,7 @@
 (start 600 600)
 
 ;; Draw the BackDrop night Sky
-(draw-solid-rect (make-posn 0 0) 600 500 'gray)
+(draw-solid-rect (make-posn 0 0) 600 500 'blue)
 
 ;; MOON
 ;; Draw face
@@ -55,3 +55,14 @@
 (draw-solid-disk l_cloud_3 30 'white)
 (draw-solid-disk m_cloud_3 30 'white)
 (draw-solid-disk r_cloud_3 30 'white)
+
+;; Hills
+;; Hill 1
+(define h_1 (make-posn 100 450))
+(draw-solid-disk h_1 150 'green)
+;; Hill 2
+(define h_2 (make-posn 350 450))
+(draw-solid-disk h_2 200 'green)
+;; Hill 3
+(define h_3 (make-posn 550 450))
+(draw-solid-disk h_3 100 'green)
