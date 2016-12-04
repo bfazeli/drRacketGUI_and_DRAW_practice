@@ -82,7 +82,7 @@
 (define r_portion (make-posn 350 480))
 (draw-solid-rect r_portion 50 50 'darkred)
 
-;; Train wheels
+;; Train Head Wheels
 (define cover (make-posn 280 530))
 (draw-solid-rect cover 110 20 'green)
 (define wheel_1 (make-posn 270 540))
@@ -101,6 +101,31 @@
 (draw-solid-disk wheel_7 10 'black)
 
 ;; Train head_body connector
-(define start_connector (make-posn 220 480))
+(define start_connector (make-posn 230 480))
 (define end_connector (make-posn 260 480))
 (draw-solid-line start_connector end_connector 'darkslategray)
+
+;; Train body_portion
+;; m_portion
+(define b_m_portion (make-posn 50 430))
+(draw-solid-rect b_m_portion 180 100 'darkred)
+
+;; Train Body Wheels
+(define b_wheel_1 (make-posn 60 540))
+(draw-solid-disk b_wheel_1 10 'black)
+(define b_wheel_2 (make-posn 80 540))
+(draw-solid-disk b_wheel_2 10 'black)
+(define b_wheel_3 (make-posn 100 540))
+(draw-solid-disk b_wheel_3 10 'black)
+(define b_wheel_4 (make-posn 120 540))
+(draw-solid-disk b_wheel_4 10 'black)
+(define b_wheel_5 (make-posn 140 540))
+(draw-solid-disk b_wheel_5 10 'black)
+(define b_wheel_6 (make-posn 160 540))
+(draw-solid-disk b_wheel_6 10 'black)
+(define b_wheel_7 (make-posn 180 540))
+(draw-solid-disk b_wheel_7 10 'black)
+(define b_wheel_8 (make-posn 200 540))
+(draw-solid-disk b_wheel_8 10 'black)
+(define b_wheel_9 (make-posn 220 540))
+(draw-solid-disk b_wheel_9 10 'black)
