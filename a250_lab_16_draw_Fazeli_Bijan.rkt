@@ -40,3 +40,11 @@
 (draw-solid-disk l_cloud 30 'white)
 (draw-solid-disk m_cloud 30 'white)
 (draw-solid-disk r_cloud 30 'white)
+
+;; Cloud 2
+(define l_cloud_2 (make-posn 300 40))
+(define m_cloud_2 (make-posn 340 70))
+(define r_cloud_2 (make-posn 370 40))
+(draw-solid-disk l_cloud_2 40 'white)
+(draw-solid-disk m_cloud_2 30 'white)
+(draw-solid-disk r_cloud_2 30 'white)
