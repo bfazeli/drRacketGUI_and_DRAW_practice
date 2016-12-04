@@ -64,5 +64,43 @@
 (define h_2 (make-posn 350 450))
 (draw-solid-disk h_2 200 'green)
 ;; Hill 3
-(define h_3 (make-posn 550 450))
+(define h_3 (make-posn 560 460))
 (draw-solid-disk h_3 100 'green)
+
+;; Street
+;; Background
+(draw-solid-rect (make-posn 0 550) 600 50 'gray)
+
+;; Train head_portion
+;; draw_train_window
+(define wind_s (make-posn 340 490))
+(draw-solid-disk wind_s 60 'black)
+;; m_portion
+(define m_portion (make-posn 260 430))
+(draw-solid-rect m_portion 90 100 'darkred)
+;; r_portion
+(define r_portion (make-posn 350 480))
+(draw-solid-rect r_portion 50 50 'darkred)
+
+;; Train wheels
+(define cover (make-posn 280 530))
+(draw-solid-rect cover 110 20 'green)
+(define wheel_1 (make-posn 270 540))
+(draw-solid-disk wheel_1 10 'black)
+(define wheel_2 (make-posn 290 540))
+(draw-solid-disk wheel_2 10 'black)
+(define wheel_3 (make-posn 310 540))
+(draw-solid-disk wheel_3 10 'black)
+(define wheel_4 (make-posn 330 540))
+(draw-solid-disk wheel_4 10 'black)
+(define wheel_5 (make-posn 350 540))
+(draw-solid-disk wheel_5 10 'black)
+(define wheel_6 (make-posn 370 540))
+(draw-solid-disk wheel_6 10 'black)
+(define wheel_7 (make-posn 390 540))
+(draw-solid-disk wheel_7 10 'black)
+
+;; Train head_body connector
+(define start_connector (make-posn 220 480))
+(define end_connector (make-posn 260 480))
+(draw-solid-line start_connector end_connector 'darkslategray)
